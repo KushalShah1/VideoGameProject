@@ -5,10 +5,10 @@
 // Jonathan Valvano
 // November 17, 2014
 
-
+#ifndef __Sound_h
+#define __Sound_h
+enum soundState{death,coinSound,background,powerup};
 void Sound_Init(void);
-void Sound(void);
-void Sound_Powerup(void);
-void Sound_Coin(void);
-void Sound_Death(void);
-
+void Sound_Play(void);
+void setSoundState(enum soundState x);
+#endif /* __Sound_h */
